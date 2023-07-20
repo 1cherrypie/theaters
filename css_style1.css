@@ -1,0 +1,240 @@
+body{
+	background-color: #fff5ee;
+	font-family: cambria;
+	display: flex;
+	flex-direction: column;
+}
+.content{
+	flex: 1;
+}
+.some-container{
+	width: 100%;
+	max-width: 1024px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.top-menu{
+	background: #008080;
+	box-shadow: 3px 0 7px rgba(0,0,0,.3);
+	padding: 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+	color: #F73E24;
+	font-size: 50px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+}
+.first-menu{
+	display: flex;
+	justify-content: space-between;
+}
+.first-m{
+	align-self: center;
+}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {
+	display: inline-block;
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 51px;
+  padding-left: 25px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: cambria, Times New Roman, serif;
+  font-weight: normal;
+  color: #fff5ee;
+  transition:.3s linear;
+}
+.menu-main a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #F73E24;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+.menu-main {
+  float: none;
+  padding-top: 20px;
+}
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.first-menu{display: block;}
+.menu-main li {display: block;}
+}
+
+* {box-sizing: border-box;}
+form.pole-search {
+  position: relative;
+  width: 250px;
+  margin: 10px;
+  background: #A3D0C3;
+  border-radius: 5px;
+}
+input.search-pole{
+	border: none;
+  outline: none;
+  background: transparent;
+  font-family: cambria, Times New Roman, serif;
+}
+button.cndbober{
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: cambria, Times New Roman, serif;
+}
+input.search-pole{
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+}
+button.cndbober{
+  height: 42px;
+  width: 55px;
+  color: #F73E24;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+button.cndbober:hover{
+	color: #fff5ee;
+}
+div.login a{
+	text-decoration: none; 
+	color: #414a4c;
+}
+div.login a:hover{
+	text-decoration: none; 
+	color: #F73E24; 
+	border-left: 1px solid #fff5ee;
+	border-right: 1px solid #fff5ee;
+}
+.footer-menu{
+	background: #008080;
+	box-shadow: 3px 0 7px rgba(0,0,0,.3);
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.footer-block{
+	flex-grow: 1;
+}
+.bottom-menu{
+	font-size: 14px;
+	list-style: none;
+}
+.footer-block a{ 
+	text-decoration: none; 
+	color: #414a4c;
+}
+.footer-block a:hover { 
+	text-decoration: none; 
+	color: #F73E24; 
+	border-left: 1px solid #fff5ee;
+	border-right: 1px solid #fff5ee;
+}
+.bottom-menu-header a:hover { 
+	text-decoration: none; 
+	color: #F73E24;
+}
+.bottom-menu-desc{
+	font-size: 12px;
+}
+p.paragraph:first-letter{
+	font-size: 1.5em;
+	color: #F73E24;
+}
+
+
+.content-container-theaters{
+	padding-left: 25px;
+}
+h3.theaters-title{
+	color: #008080;
+	font-size: 2.5em;
+	font-weight: bold;
+	text-align: center;
+}
+h3 a.alphabet{
+	text-decoration: none;
+	color: #F73E24;
+	font-size: 1.5em;
+}
+p.alphabet-l {
+	color: #008080;
+	font-size: 2.5em;
+}
+a.alphabet-la {
+	text-decoration: none;
+	color: #000000;
+}
+h3 a.alphabet:hover{
+	text-decoration: none;
+	color: #008080;
+}
+a.alphabet-la:hover {
+	text-decoration: none;
+	color: #414a4c;
+	border-bottom: 1px solid #F73E24;
+	border-top: 1px solid #F73E24;
+}
+
+
+img.theater-img{
+	border: 3px solid #F73E24;
+	float: left;
+	margin: 0 2em 2em 0;
+}
+p.desc-theater{
+	clear: left;
+}
+
+.content-container-contacts{
+	padding-left: 25px;
+}
+h3.theaters-title1{
+	color: #F73E24;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+h4.contacts-paragraph{
+	color: #008080;
+	font-size: 1.2em;
+}
+a.contacts-link{
+	text-decoration: none;
+	color: #008080;
+	font-size: 1em;
+}
+a.contacts-link:hover {
+	text-decoration: none;
+	color: #F73E24;
+}
